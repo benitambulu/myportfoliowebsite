@@ -4,5 +4,5 @@ In this project i will be developing a one pager website that contains all you n
 
 https://mbulubenita.github.io/myportfoliowebsite/
 
- <img src="./portfolio-pics" alt="Portfolio Pics">
+ <img src="portfolio-pics.PNG" alt="Portfolio Pics">
 
