@@ -1,0 +1,460 @@
+/* This is section is for styling the body section*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* This is section is for styling the header section */
+header h1 {
+    text-align: center;
+    color: 121212;
+    line-height: 70px;
+    font-weight: 200;
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+#header-img {
+    width: 1080px;
+    height: 300px;
+    margin: 60px auto;
+    display: flex;
+
+}
+
+/* This is section is for styling the navbar section*/
+#navbar {
+    padding: 20px;
+    width: 1024px;
+    height: 30px;
+    border: 1px solid rgba(215, 215, 215, 0.80);
+    border-radius: 70px;
+    margin: 40px auto;
+    display: flex;
+    align-content: center;
+}
+
+
+#navbar h3 {
+    margin: auto 0;
+    padding-left: 20px;
+    color: #303030;
+    font-weight: 500;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin: auto 0 auto 300px;
+
+}
+
+#navbar ul li {
+    padding: 0 30px;
+
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #57606F;
+}
+
+
+/* This is section is for styling the about section */
+#about h2 {
+    text-align: center;
+    margin-top: 124px;
+    font-weight: 600;
+    color: #303030;
+
+}
+
+#about p {
+    text-align: center;
+    color: #57606F;
+
+}
+
+#about-me {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+
+#about-me-contents {
+    width: 440px;
+    height: 300px;
+    border-radius: 16px;
+    border: 1px solid #D7D7D7;
+    margin: 64px 20px 64px 10px;
+    padding: 32px 43px 64px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+
+}
+
+#about-me-contents h1 {
+    text-align: justify;
+    color: #303030;
+}
+
+#about-me-contents p {
+    text-align: justify;
+    line-height: 150%;
+    color: #303030;
+}
+
+#my-skill-contents {
+    width: 440px;
+    height: 300px;
+    border-radius: 16px;
+    border: 1px solid #D7D7D7;
+    margin: 64px 10px 64px 20px;
+    padding: 32px 43px 64px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+
+}
+
+#my-skill-contents h1 {
+    text-align: justify;
+    color: #303030;
+}
+
+#my-skill-contents p {
+    text-align: justify;
+    color: #57606F;
+
+}
+
+
+.text-buttons {
+    border-radius: 257px;
+    border: 1px solid #D7D7D7;
+    background: #F9F9F9;
+    width: 100px;
+    height: 30px;
+    display: inline-flex;
+    padding: 4px 14px;
+    align-items: flex-start;
+    gap: 8px;
+    justify-content: center;
+
+}
+
+.text-buttons p {
+    color: #57606F;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+
+/* This is section is for styling the project section */
+#project h2 {
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+#project-p {
+    text-align: center;
+
+}
+
+#project-content {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+
+.project-frame {
+    width: 340px;
+    height: 360px;
+    border-radius: 16px;
+    border: 2px solid #D7D7D7;
+    background: var(--White-Color, #FFF);
+    margin: 10px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.project-frame img {
+    width: 340px;
+    height: 260px;
+    border-radius: 14px;
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.project-frame img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.project-frame h3 {
+    padding: 0 20px;
+    margin-bottom: 10px;
+    color: #303030;
+
+}
+
+.project-frame p {
+    padding: 0 20px;
+    font-weight: 100;
+    font-size: small;
+    margin-top: 10px;
+    color: #57606F;
+
+}
+
+/* This is section is for styling the footer section */
+
+#footer {
+    display: flex;
+    flex: 2;
+    margin-top: 120px;
+    padding: 10px;
+}
+
+#footer h4 {
+    padding-left: 60px;
+    color: #303030;
+}
+
+#footer ul {
+    list-style: none;
+    display: flex;
+    margin: auto 0 auto 300px;
+    padding-left: 220px;
+
+}
+
+#footer ul li {
+    padding: 0 30px;
+
+}
+
+#footer ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #57606F;
+}
+
+
+/* Resposiveness  for mobile screen*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    /* mobile devices */
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: aliceblue;
+    }
+
+    #navbar{
+        width: 80%;
+    }
+
+    #header h1{
+        text-align: center;
+        color: 121212;
+        line-height: 60px;
+        font-weight: 100;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    #header-img {
+        width: 90%;
+        height: 150px;
+        margin: 50px auto;
+    
+    }
+
+    #about h2 {
+        text-align: center;
+        margin-top: 120px;
+        font-weight: 600;
+        color: #303030;
+    
+    }
+
+    #about-me {
+        display: flex;
+        flex: 1;
+        order: 2;
+        flex-wrap: wrap;
+    }
+    
+    #about-me-contents {
+        width: 75%;
+        height: 300px;
+        border-radius: 16px;
+        border: 1px solid #D7D7D7;
+        margin: 64px 20px 40px 0;
+        padding: 30px 43px 64px 32px;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 16px;
+        flex-shrink: 0;
+    
+    }
+
+    #my-skill-contents {
+        width: 75%;
+        height: 300px;
+        border-radius: 16px;
+        border: 1px solid #D7D7D7;
+        margin: 20px 10px 64px 0;
+        padding: 32px 43px 64px 32px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        flex-shrink: 0;
+
+}
+
+.text-buttons {
+    border-radius: 257px;
+    border: 1px solid #D7D7D7;
+    background: #F9F9F9;
+    width: 60px;
+    height: 30px;
+    display: inline-flex;
+    padding: 4px 14px;
+    align-items: flex-start;
+    gap: 8px;
+    justify-content: center;
+
+}
+
+.text-buttons p {
+    color: #57606F;
+    font-size: 8px;
+    margin: 8px 0;
+}
+
+#about-me-contents h1 {
+    text-align: justify;
+    color: #303030;
+    font-size: larger;
+}
+
+#my-skill-contents h1 {
+    text-align: justify;
+    color: #303030;
+    font-size: larger;
+}
+
+#project-content {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.project-frame {
+    width: 340px;
+    height: 360px;
+    border-radius: 16px;
+    border: 2px solid #D7D7D7;
+    background: var(--White-Color, #FFF);
+    margin: 10px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.project-frame img {
+    width: 340px;
+    height: 260px;
+    border-radius: 14px;
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.project-frame img:hover{
+transform: scale(1.1);
+filter: grayscale(0%);
+}
+
+#footer {
+    margin-top: 120px;
+    padding: 20px;
+    justify-content: center;
+}
+
+#footer h4 {
+    padding-left: 60px;
+    color: #303030;
+}
+
+#footer ul {
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+
+}
+
+#footer ul li {
+    padding: 0 30px;
+
+}
+
+#footer ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #57606F;
+}
+
+}
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    /* small ipads and small android tablets */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    /* laptops and and small screens */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    /* large screens and desktops */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width: 1201px) and (orientation: landscape){
+    /* large LCD screens and beyond */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
