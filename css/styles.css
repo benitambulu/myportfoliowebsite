@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -51,6 +51,11 @@ header h1 {
     display: flex;
     margin: auto 0 auto 300px;
 
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
 }
 
 #navbar ul li {
@@ -196,7 +201,7 @@ header h1 {
     cursor: pointer;
 }
 
-.project-frame img:hover{
+.project-frame img:hover {
     transform: scale(1.1);
     filter: grayscale(0%);
 }
@@ -251,6 +256,7 @@ header h1 {
 }
 
 
+
 /* Resposiveness  for mobile screen*/
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -259,14 +265,52 @@ header h1 {
     body {
         margin: 0;
         padding: 0;
-        background-color: aliceblue;
+        background-color: rgb(244, 244, 244);
+        min-width: 320px;
+        max-width: 480px
     }
 
-    #navbar{
+    #navbar {
         width: 80%;
     }
 
-    #header h1{
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        border: 1px solid #d7d7d7;
+        border-radius: 8px;
+        width: 150px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 40px;
+    }
+
+    #navbar ul li {
+        padding: 10px 20px;
+    }
+
+    #navbar ul li a {
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-left: 200px;
+        color: rgb(82, 82, 82);
+
+    }
+
+    /* Open menu styles */
+    #navbar ul.show {
+        display: flex;
+    }
+
+
+
+    #header h1 {
         text-align: center;
         color: 121212;
         line-height: 60px;
@@ -277,9 +321,9 @@ header h1 {
 
     #header-img {
         width: 90%;
-        height: 150px;
+        height: 100%;
         margin: 50px auto;
-    
+
     }
 
     #about h2 {
@@ -287,7 +331,7 @@ header h1 {
         margin-top: 120px;
         font-weight: 600;
         color: #303030;
-    
+
     }
 
     #about-me {
@@ -296,7 +340,7 @@ header h1 {
         order: 2;
         flex-wrap: wrap;
     }
-    
+
     #about-me-contents {
         width: 75%;
         height: 300px;
@@ -308,7 +352,7 @@ header h1 {
         align-items: flex-end;
         gap: 16px;
         flex-shrink: 0;
-    
+
     }
 
     #my-skill-contents {
@@ -323,87 +367,109 @@ header h1 {
         gap: 16px;
         flex-shrink: 0;
 
-}
+    }
 
-.text-buttons {
-    border-radius: 257px;
-    border: 1px solid #D7D7D7;
-    background: #F9F9F9;
-    width: 60px;
-    height: 30px;
-    display: inline-flex;
-    padding: 4px 14px;
-    align-items: flex-start;
-    gap: 8px;
-    justify-content: center;
+    .text-buttons {
+        border-radius: 257px;
+        border: 1px solid #D7D7D7;
+        background: #F9F9F9;
+        width: 60px;
+        height: 30px;
+        display: inline-flex;
+        padding: 4px 14px;
+        align-items: flex-start;
+        gap: 8px;
+        justify-content: center;
 
-}
+    }
 
-.text-buttons p {
-    color: #57606F;
-    font-size: 8px;
-    margin: 8px 0;
-}
+    .text-buttons p {
+        color: #57606F;
+        font-size: 8px;
+        margin: 8px 0;
+    }
 
-#about-me-contents h1 {
-    text-align: justify;
-    color: #303030;
-    font-size: larger;
-}
+    #about-me-contents h1 {
+        text-align: justify;
+        color: #303030;
+        font-size: larger;
+    }
 
-#my-skill-contents h1 {
-    text-align: justify;
-    color: #303030;
-    font-size: larger;
-}
+    #my-skill-contents h1 {
+        text-align: justify;
+        color: #303030;
+        font-size: larger;
+    }
 
-#project-content {
-    display: flex;
-    flex: 2;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+    #project-content {
+        display: flex;
+        flex: 2;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
 
-.project-frame {
-    width: 340px;
-    height: 360px;
-    border-radius: 16px;
-    border: 2px solid #D7D7D7;
-    background: var(--White-Color, #FFF);
-    margin: 10px;
-    padding: 0px;
-    overflow: hidden;
-}
+    .project-frame {
+        width: 340px;
+        height: 360px;
+        border-radius: 16px;
+        border: 2px solid #D7D7D7;
+        background: var(--White-Color, #FFF);
+        margin: 10px;
+        padding: 0px;
+        overflow: hidden;
+    }
 
-.project-frame img {
-    width: 340px;
-    height: 260px;
-    border-radius: 14px;
-    filter: grayscale(100%);
-    transition: 0.5s ease;
-    cursor: pointer;
-}
+    .project-frame img {
+        width: 340px;
+        height: 260px;
+        border-radius: 14px;
+        filter: grayscale(100%);
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
 
-.project-frame img:hover{
-transform: scale(1.1);
-filter: grayscale(0%);
-}
+    .project-frame img:hover {
+        transform: scale(1.1);
+        filter: grayscale(0%);
+    }
 
-#footer {
+
+    #footer {
+        display: block;
+        margin: 80px 0 40px 0;
+    }
+
+    #footer h4 {
+        margin-left: 200px;
+        padding-left: 0;
+    }
+
+    #footer ul {
+        padding-left: 0;
+        margin-left: 60px;
+        width: 280px;
+    }
+
+    #footer ul li {
+        padding: 0 8px;
+    }
+
+
+    /* #footer {
     margin-top: 120px;
     padding: 20px;
     justify-content: center;
 }
 
 #footer h4 {
-    padding-left: 60px;
+    
     color: #303030;
 }
 
 #footer ul {
     list-style: none;
-    flex-wrap: wrap;
+    
     margin: 0;
 
 }
@@ -417,23 +483,143 @@ filter: grayscale(0%);
     text-decoration: none;
     font-size: 14px;
     color: #57606F;
-}
+} */
 
 }
 
 
 
 
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
     /* small ipads and small android tablets */
     body {
         margin: 0;
         padding: 0;
+        background-color: rgb(237, 237, 237);
+    }
+
+    #navbar {
+        width: 80%;
+    }
+
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        border: 1px solid #d7d7d7;
+        border-radius: 8px;
+        width: 150px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 40px;
+    }
+
+    #navbar ul li {
+        padding: 10px 20px;
+    }
+
+    #navbar ul li a {
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-left: 300px;
+        color: rgb(82, 82, 82);
+
+    }
+
+    /* Open menu styles */
+    #navbar ul.show {
+        display: flex;
+    }
+
+
+
+    #header-img {
+        width: 80%;
+        height: 100%;
+    }
+
+    #about-me {
+        display: block;
+    }
+
+    #about-me-contents,
+    #my-skill-contents {
+        width: 80%;
+        margin-left: 20px;
+        margin-right: 10px;
+        gap: 8px;
+    }
+
+    #project-content {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .project-frame {
+        width: 400px;
+        height: 360px;
+        border-radius: 16px;
+        border: 2px solid #D7D7D7;
+        background: var(--White-Color, #FFF);
+        margin: 10px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .project-frame img {
+        width: 400px;
+        height: 260px;
+        border-radius: 14px;
+        filter: grayscale(100%);
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+
+    .project-frame img:hover {
+        transform: scale(1.1);
+        filter: grayscale(0%);
+    }
+
+
+
+
+
+
+
+
+    #footer {
+        display: block;
+        margin: 80px 0 40px 0;
+    }
+
+    #footer h4 {
+        margin-left: 280px;
+        padding-left: 0;
+    }
+
+    #footer ul {
+        padding-left: 0;
+        margin-left: 150px;
+        width: 280px;
+    }
+
+    #footer ul li {
+        padding: 0 8px;
     }
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
     /* laptops and and small screens */
     body {
         margin: 0;
@@ -442,7 +628,8 @@ filter: grayscale(0%);
 }
 
 
-@media screen and (min-width: 1025px) and (max-width: 1200px){
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
     /* large screens and desktops */
     body {
         margin: 0;
@@ -451,7 +638,8 @@ filter: grayscale(0%);
 }
 
 
-@media screen and (min-width: 1201px) and (orientation: landscape){
+@media screen and (min-width: 1201px) and (orientation: landscape) {
+
     /* large LCD screens and beyond */
     body {
         margin: 0;
