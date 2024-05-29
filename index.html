@@ -17,8 +17,13 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#project">Projects</a></li>
                 <li><a href="#footer">Contact Me</a></li>
-                <li><a href="https://drive.google.com/file/d/1wwxaz8UkYPIwF8ni-WJ3FuzTyp0R0-PB/view?usp=sharing" target="_blank">Download Cv</a></li>
+                <li><a href="https://drive.google.com/file/d/1wwxaz8UkYPIwF8ni-WJ3FuzTyp0R0-PB/view?usp=sharing"
+                        target="_blank">Download Cv</a></li>
             </ul>
+            <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 17h14M5 12h14M5 7h14" />
+            </svg>
         </nav>
 
         <h1>Benita, <br> Software Engineer</h1>
@@ -97,32 +102,32 @@
         <p id="project-p">My Recent Projects</p>
 
         <div id="project-content">
-            
-                <div class="project-frame">
-                    <a href="https://www.behance.net/gallery/182942681/Rare-Ed" target="_blank">
-                        <div><img src="./images/Rare-ed.png" alt="rare-ed Picture"></div>
-                    </a>
-                    <h3>Rare-ed App</h3>
-                    <p>UX Case Study</p>
-                </div>
+
+            <div class="project-frame">
+                <a href="https://www.behance.net/gallery/182942681/Rare-Ed" target="_blank">
+                    <div><img src="./images/Rare-ed.png" alt="rare-ed Picture"></div>
+                </a>
+                <h3>Rare-ed App</h3>
+                <p>UX Case Study</p>
+            </div>
             </a>
 
-            
-                <div class="project-frame">
-                    <a href="https://www.behance.net/gallery/190798247/BBEXCHANGE" target="_blank">
-                        <div><img src="./images/BBmoney.png" alt="bbexchange Picture"></div>
-                    </a>
-                    <h3>BB Exchange App</h3>
-                    <p>UX Case Study</p>
-                </div>
 
-                <div class="project-frame">
-                    <a href="https://www.behance.net/gallery/163155565/Roomie-App" target="_blank">
-                        <div><img src="./images/Roomies.png" alt="roomies Picture"></div>
-                    </a>
-                    <h3>Roomies App</h3>
-                    <p>UX Case Study</p>
-                </div>
+            <div class="project-frame">
+                <a href="https://www.behance.net/gallery/190798247/BBEXCHANGE" target="_blank">
+                    <div><img src="./images/BBmoney.png" alt="bbexchange Picture"></div>
+                </a>
+                <h3>BB Exchange App</h3>
+                <p>UX Case Study</p>
+            </div>
+
+            <div class="project-frame">
+                <a href="https://www.behance.net/gallery/163155565/Roomie-App" target="_blank">
+                    <div><img src="./images/Roomies.png" alt="roomies Picture"></div>
+                </a>
+                <h3>Roomies App</h3>
+                <p>UX Case Study</p>
+            </div>
             </a>
         </div>
 
@@ -132,7 +137,8 @@
     <footer id="footer">
         <h4>©2024</h4>
         <ul>
-            <li><a href="https://www.instagram.com/beniottabenita.uiux?igsh=d253ZWtndmszaGx4&utm_source=qr" target="_blank">Instagram</a></li>
+            <li><a href="https://www.instagram.com/beniottabenita.uiux?igsh=d253ZWtndmszaGx4&utm_source=qr"
+                    target="_blank">Instagram</a></li>
             <li><a href="http://twitter.com/beniottabenita_" target="_blank">Twitter</a></li>
             <li><a href="https://www.linkedin.com/in/benita-mbulu-aba074169" target="_blank">Linkedin</a></li>
             <li><a href="https://www.behance.net/beniottabenita_" target="_blank">Behance</a></li>
@@ -141,5 +147,13 @@
         </ul>
     </footer>
 </body>
+<script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const navMenu = document.querySelector('#navbar ul');
+
+    menuIcon.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+</script>
 
 </html>
