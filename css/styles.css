@@ -259,19 +259,20 @@ header h1 {
 
 /* Resposiveness  for mobile screen*/
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-
+@media screen and (max-width: 768px) {
     /* mobile devices */
     body {
         margin: 0;
         padding: 0;
-        background-color: rgb(244, 244, 244);
+        background-color: white;
         min-width: 320px;
-        max-width: 480px
+        max-width: 480px;
     }
 
     #navbar {
         width: 80%;
+        padding: 10px;
+        position: relative;
     }
 
     #navbar ul {
@@ -298,9 +299,9 @@ header h1 {
 
     .menu-icon {
         display: block;
-        margin-left: 200px;
-        color: rgb(82, 82, 82);
-
+        margin-left: auto;
+        color: rgb(113, 113, 113);
+        cursor: pointer;
     }
 
     /* Open menu styles */
@@ -308,9 +309,7 @@ header h1 {
         display: flex;
     }
 
-
-
-    #header h1 {
+    header h1 {
         text-align: center;
         color: 121212;
         line-height: 60px;
@@ -320,10 +319,9 @@ header h1 {
     }
 
     #header-img {
-        width: 90%;
+        width: 80%;
         height: 100%;
         margin: 50px auto;
-
     }
 
     #about h2 {
@@ -331,7 +329,6 @@ header h1 {
         margin-top: 120px;
         font-weight: 600;
         color: #303030;
-
     }
 
     #about-me {
@@ -342,7 +339,7 @@ header h1 {
     }
 
     #about-me-contents {
-        width: 75%;
+        width: 78%;
         height: 300px;
         border-radius: 16px;
         border: 1px solid #D7D7D7;
@@ -352,11 +349,10 @@ header h1 {
         align-items: flex-end;
         gap: 16px;
         flex-shrink: 0;
-
     }
 
     #my-skill-contents {
-        width: 75%;
+        width: 78%;
         height: 300px;
         border-radius: 16px;
         border: 1px solid #D7D7D7;
@@ -366,35 +362,29 @@ header h1 {
         align-items: flex-start;
         gap: 16px;
         flex-shrink: 0;
-
     }
 
     .text-buttons {
         border-radius: 257px;
         border: 1px solid #D7D7D7;
-        background: #F9F9F9;
-        width: 60px;
-        height: 30px;
+        background-color: #F9F9F9;
+        width: 40px;
+        height: 28px;
         display: inline-flex;
         padding: 4px 14px;
         align-items: flex-start;
         gap: 8px;
         justify-content: center;
-
     }
 
     .text-buttons p {
         color: #57606F;
         font-size: 8px;
         margin: 8px 0;
+        text-align: center;
     }
 
-    #about-me-contents h1 {
-        text-align: justify;
-        color: #303030;
-        font-size: larger;
-    }
-
+    #about-me-contents h1,
     #my-skill-contents h1 {
         text-align: justify;
         color: #303030;
@@ -408,7 +398,6 @@ header h1 {
         flex-wrap: wrap;
     }
 
-
     .project-frame {
         width: 340px;
         height: 360px;
@@ -434,215 +423,33 @@ header h1 {
         filter: grayscale(0%);
     }
 
-
     #footer {
-        display: block;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
         margin: 80px 0 40px 0;
+        flex-direction: column; /* If you want the h4 and ul to stack vertically */
     }
-
+    
     #footer h4 {
-        margin-left: 200px;
-        padding-left: 0;
-    }
-
-    #footer ul {
-        padding-left: 0;
-        margin-left: 60px;
-        width: 280px;
-    }
-
-    #footer ul li {
-        padding: 0 8px;
-    }
-
-
-    /* #footer {
-    margin-top: 120px;
-    padding: 20px;
-    justify-content: center;
-}
-
-#footer h4 {
-    
-    color: #303030;
-}
-
-#footer ul {
-    list-style: none;
-    
-    margin: 0;
-
-}
-
-#footer ul li {
-    padding: 0 30px;
-
-}
-
-#footer ul li a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #57606F;
-} */
-
-}
-
-
-
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-    /* small ipads and small android tablets */
-    body {
-        margin: 0;
+        margin-bottom: 20px; /* Add some space between h4 and ul */
+        color: #303030;
         padding: 0;
-        background-color: rgb(237, 237, 237);
     }
-
-    #navbar {
-        width: 80%;
-    }
-
-    #navbar ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background: white;
-        border: 1px solid #d7d7d7;
-        border-radius: 8px;
-        width: 150px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-top: 40px;
-    }
-
-    #navbar ul li {
-        padding: 10px 20px;
-    }
-
-    #navbar ul li a {
-        font-size: 16px;
-    }
-
-    .menu-icon {
-        display: block;
-        margin-left: 300px;
-        color: rgb(82, 82, 82);
-
-    }
-
-    /* Open menu styles */
-    #navbar ul.show {
-        display: flex;
-    }
-
-
-
-    #header-img {
-        width: 80%;
-        height: 100%;
-    }
-
-    #about-me {
-        display: block;
-    }
-
-    #about-me-contents,
-    #my-skill-contents {
-        width: 80%;
-        margin-left: 20px;
-        margin-right: 10px;
-        gap: 8px;
-    }
-
-    #project-content {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-
-    .project-frame {
-        width: 400px;
-        height: 360px;
-        border-radius: 16px;
-        border: 2px solid #D7D7D7;
-        background: var(--White-Color, #FFF);
-        margin: 10px;
-        padding: 0px;
-        overflow: hidden;
-    }
-
-    .project-frame img {
-        width: 400px;
-        height: 260px;
-        border-radius: 14px;
-        filter: grayscale(100%);
-        transition: 0.5s ease;
-        cursor: pointer;
-    }
-
-    .project-frame img:hover {
-        transform: scale(1.1);
-        filter: grayscale(0%);
-    }
-
-
-
-
-
-
-
-
-    #footer {
-        display: block;
-        margin: 80px 0 40px 0;
-    }
-
-    #footer h4 {
-        margin-left: 280px;
-        padding-left: 0;
-    }
-
+    
     #footer ul {
         padding-left: 0;
-        margin-left: 150px;
-        width: 280px;
+        margin: 0;
+        width: 100%; /* Or set a specific width if needed */
+        display: flex;
+        justify-content: center; /* Center the list items horizontally */
     }
-
+    
     #footer ul li {
         padding: 0 8px;
     }
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
-    /* laptops and and small screens */
-    body {
-        margin: 0;
-        padding: 0;
-    }
-}
 
 
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-
-    /* large screens and desktops */
-    body {
-        margin: 0;
-        padding: 0;
-    }
-}
-
-
-@media screen and (min-width: 1201px) and (orientation: landscape) {
-
-    /* large LCD screens and beyond */
-    body {
-        margin: 0;
-        padding: 0;
-    }
-}
