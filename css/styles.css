@@ -368,10 +368,10 @@ header h1 {
         border-radius: 257px;
         border: 1px solid #D7D7D7;
         background-color: #F9F9F9;
-        width: 40px;
+        width: 54px;
         height: 28px;
         display: inline-flex;
-        padding: 4px 14px;
+        padding: 4px 16px;
         align-items: flex-start;
         gap: 8px;
         justify-content: center;
